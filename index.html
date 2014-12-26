@@ -96,7 +96,7 @@
 	//This has to be at the end of the page because all the scripts are loaded async
 	//https://api.github.com/repos/wreiske/shellshocker/contributors
 	$(function(){
-	    var jqxhr = $.getJSON("https://api.github.com/orgs/zbad405/public_members", function(data) {
+	    var jqxhr = $.getJSON("https://api.github.com/orgs/zeta-dev/public_members", function(data) {
 		$("#contributers_count").html(data.length + ' Contributers to Zetacoin');
 		$("#contributers").html('<div class="row">');
 		$.each(data, function( index, value ) {
